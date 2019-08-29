@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Essay Grading System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/cssfile.css">
+</head>
+<body>
+	<div class='heading'>
+		<center >
+			<h1>Essay description 02</h1>
+			<p>
+				All the required details and khaniyas of the essay set number 02.
+			</p>
+		</center>
+	</div>
+	<div align="center">
+		<form method=POST action="{{ url_for('result')}}" class="form-group">
+			<textarea name="essay" rows="20" cols="70" placeholder="Enter the essay."></textarea><br><br>
+			<button type="submit" class="button" style="vertical-align:middle"><span>
+				Result
+			</span></button>
+
+
+		</form>
+	</div>
+</body>
+</html>
