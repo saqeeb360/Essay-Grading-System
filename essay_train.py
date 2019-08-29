@@ -121,7 +121,7 @@ def lemmas_count(x):
   return pd.Series([noun_count , verb_count , adjective_count, adverb_count])
 df[['noun_count','verb_count','adjective_count','adverb_count']] = df['essay'].apply(lemmas_count)
 
-
+'''
 df1 = df[df['essay_set'] == 1]
 df2 = df[df['essay_set'] == 2]
 df3 = df[df['essay_set'] == 3]
@@ -132,13 +132,12 @@ df7 = df[df['essay_set'] == 7]
 df8 = df[df['essay_set'] == 8]
 
 
-"""
+
 Making a ndarray for training set
 Features and label
 Also we need to tokenize the df
-"""
 
-'''
+
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(max_features = 1000, stop_words='english')
 features = cv.fit_transform(df['essay'])
