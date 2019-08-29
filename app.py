@@ -74,9 +74,12 @@ def pred_method(essay,essay_id):
 
 app = Flask(__name__, template_folder = 'templates')
 
-@app.route('/home',methods=['GET'])
+@app.route('/',methods=['GET'])
 def home():
 	return render_template('home.html')
+@app.route('/home',methods=['GET'])
+def home():
+    return render_template('home.html')
 
 @app.route('/essay01',methods=['GET','POST'])
 def essay01():      
