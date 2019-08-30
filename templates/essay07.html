@@ -3,14 +3,23 @@
 <head>
 	<title>Essay Grading System</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/static/cssfile.css">
+	<link rel="stylesheet" type="text/css" href="/static/mystyle.css">
 </head>
 <body>
+	<ul class="topnav">
+  		<li><a href="#home">HOME</a></li>
+  		<li><a class="active" href="{{url_for('essay07')}}">ESSAY</a></li>
+  		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="#{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li class="right"><a href="#about">ABOUT</a></li>
+  	</ul>
 	<dir class='heading'>
 		<center >
-			<h1>Essay description 07</h1>
+			<h1>Patience</h1>
 			<p>
-				All the required details and khaniyas of the essay set number 07.
+				Write about patience. Being patient means that you are understanding and tolerant. A patient person experience difficulties without complaining.
+Do only one of the following: write a story about a time when you were patient OR write a story about a time when someone you know was patient OR write a story in your own way about patience.
+
 			</p>
 		</center>
 	</dir>
@@ -24,5 +33,12 @@
 
 		</form>
 	</div>
+	<div class="foot">
+<a id="footerMailLink" href="mailto:saqeeb.360@gmail.com">saqeeb.360@gmail.com</a>
+<br>
+<br>
+<a href="{{url_for('contact_us')}}">
+<h3>contact us</h3>
+</a></div>
 </body>
 </html>

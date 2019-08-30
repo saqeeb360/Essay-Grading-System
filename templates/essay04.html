@@ -3,14 +3,27 @@
 <head>
 	<title>Essay Grading System</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/static/cssfile.css">
+	<link rel="stylesheet" type="text/css" href="/static/mystyle.css">
 </head>
 <body>
+	<ul class="topnav">
+  		<li><a href="#home">HOME</a></li>
+   		<li><a class="active" href="{{url_for('essay04')}}">ESSAY</a></li>
+
+  		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="#{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li class="right"><a href="#about">ABOUT</a></li>
+  	</ul>
 	<div class='heading'>
 		<center >
-			<h1>Essay description 04</h1>
+			<h1>Winter Hibiscus by Minfong Ho</h1>
 			<p>
-				All the required details and khaniyas of the essay set number 04.
+				Read the last paragraph of the story.
+
+"When they come back, Saeng vowed silently to herself, in the spring, when the snows melt and the geese return and this hibiscus is budding, then I will take that test again." 
+
+Write a response that explains why the author concludes the story with this paragraph. In your response, include details and examples from the story that support your ideas.
+
 			</p>
 		</center>
 	</div>
@@ -24,5 +37,11 @@
 
 		</form>
 	</div>
+	<div class="foot">
+<a id="footerMailLink" href="mailto:saqeeb.360@gmail.com">saqeeb.360@gmail.com</a>
+<br>
+<br>
+<a href="{{url_for('contact_us')}}">
+<h3>contact us</h3>
 </body>
 </html>

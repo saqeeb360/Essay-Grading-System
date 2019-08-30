@@ -3,14 +3,23 @@
 <head>
 	<title>Essay Grading System</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/static/cssfile.css">
+	<link rel="stylesheet" type="text/css" href="/static/mystyle.css">
 </head>
 <body>
+	<ul class="topnav">
+  		<li><a href="#home">HOME</a></li>
+  		<li><a class="active" href="{{url_for('essay05')}}">ESSAY</a></li>
+  		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="#{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li class="right"><a href="#about">ABOUT</a></li>
+  	</ul>
 	<div class='heading'>
 		<center >
-			<h1>Essay description 05</h1>
+			<h2>Narciso Rodriguez
+from Home: The Blueprints of Our Lives
+ 05</h2>
 			<p>
-				All the required details and khaniyas of the essay set number 05.
+				Describe the mood created by the author in the memoir. Support your answer with relevant and specific information from the memoir.
 			</p>
 		</center>
 	</div>
@@ -24,5 +33,11 @@
 
 		</form>
 	</div>
+	<div class="foot">
+<a id="footerMailLink" href="mailto:saqeeb.360@gmail.com">saqeeb.360@gmail.com</a>
+<br>
+<br>
+<a href="{{url_for('contact_us')}}">
+<h3>contact us</h3>
 </body>
 </html>

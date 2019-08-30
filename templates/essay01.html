@@ -6,17 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="/static/mystyle.css">
 </head>
 <body>
+	<ul class="topnav">
+  		<li><a href="#home">HOME</a></li>
+  		<li><a class="active" href="{{url_for('essay01')}}">ESSAY</a></li>
+  		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="#{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li class="right"><a href="#about">ABOUT</a></li>
+  	</ul>
 	<div class='heading'>
 		<center >
-			<h1>Essay description 01</h1>
+			<h2>Computer : Boon or Bane</h2>
 			<p>
-				All the required details and khaniyas of the essay set number 01.
+				More and more people use computers, but not everyone agrees that this benefits society. Those who support advances in technology believe that computers have a positive effect on people. They teach hand-eye coordination, give people the ability to learn about faraway places and people, and even allow people to talk online with other people. Others have different ideas. Some experts are concerned that people are spending too much time on their computers and less time exercising, enjoying nature, and interacting with family and friends. 
+				Write a letter to your local newspaper in which you state your opinion on the effects computers have on people. Persuade the readers to agree with you.
+
 			</p>
 		</center>
 	</div>
 	<div align="center">
 		<form method=POST action="{{ url_for('result')}}" class="form-group">
-			<textarea name="essay" rows="20" cols="70" placeholder="Enter the essay."></textarea><br><br>
+			<textarea name="essay" rows="25" cols="90" placeholder="Enter the essay."></textarea><br><br>
 			<button type="submit" class="button" style="vertical-align:middle"><span>
 				Result
 			</span></button>
@@ -24,5 +33,11 @@
 
 		</form>
 	</div>
+	<div class="foot">
+<a id="footerMailLink" href="mailto:saqeeb.360@gmail.com">saqeeb.360@gmail.com</a>
+<br>
+<br>
+<a href="{{url_for('contact_us')}}">
+<h3>contact us</h3>
 </body>
 </html>

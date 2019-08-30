@@ -9,23 +9,26 @@
 <body>
 	<ul class="topnav">
   		<li><a class="active" href="#home">HOME</a></li>
-  		<li><a href="#news">HOW IT WORKS</a></li>
-  		<li><a href="#contact">CONTACT</a></li>
+  		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="{{url_for('contact_us')}}">CONTACT</a></li>
   		<li class="right"><a href="#about">ABOUT</a></li>
   	</ul>
   	<div class="heading">
   		<h1>AUTOMATIC ESSAY GRADING SYSTEM</h1> 
   		  	<p>Machine Learning | 26 July 2019</p>
   	</div>
-
+  	<br>
   <div class="c">
+  	<div>
+  	<h2 align="center" style="margin: 10px 0 0 0;">Want To Write.</h2>
+  	<p align="center" style="margin: 0 10px 50px 10px;">Select below.</p>
+ 	</div>
 	<div class="row">	
 		<div class="column">
 	    	<div class="card">
 				<a href="{{url_for('essay01')}}">
-	      			<h3>Card 1</h3>
-	      			<p>Some text</p>
-	      			<p>Some text</p>
+	      			<h3>Computer : Boon or Bane</h3>
+	      			<p>Essay writing.</p>
 	      		</a>
 	      	</div>
 	    </div>
@@ -33,9 +36,8 @@
  		<div class="column">
     		<div class="card">
     			<a href="{{url_for('essay02')}}">
-				    <h3>Card 2</h3>
-				    <p>Some text</p>
-				    <p>Some text</p>
+				    <h3>Censorship in the Libraries</h3>
+				    <p>Essay writing.</p>
 				</a>
     		</div>
   		</div>
@@ -43,9 +45,8 @@
   		<div class="column">
     		<div class="card">
     			<a href="{{url_for('essay03')}}">
-				    <h3>Card 3</h3>
-				    <p>Some text</p>
-				    <p>Some text</p>
+				    <h3>"Rough Road Ahead" by Joe Kurmaskie</h3>
+				    <p>Response writing.</p>
 				</a>
     		</div>
   		</div>
@@ -53,9 +54,8 @@
 		<div class="column">
 			<div class="card">
 				<a href="{{url_for('essay04')}}">
-			    	<h3>Card 4</h3>
-			      	<p>Some text</p>
-			    	<p>Some text</p>
+			    	<h3>Winter Hibiscus by Minfong Ho</h3>
+			      	<p>Response writing.</p>
 			    </a>
     		</div>
   		</div>
@@ -65,9 +65,8 @@
 		<div class="column">
 				<div class="card">
 					<a href="{{url_for('essay05')}}">	
-		      			<h3>Card 5</h3>
-		      			<p>Some text</p>
-		      			<p>Some text</p>
+		      			<h3>The Blueprints of Our Lives</h3>
+		      			<p>Describe it.</p>
 		      		</a>
 	      		</div>
 	  		</div>
@@ -75,9 +74,8 @@
  		<div class="column">
     		<div class="card">
     			<a href="{{url_for('essay06')}}">	
-				    <h3>Card 6</h3>
-				    <p>Some text</p>
-				    <p>Some text</p>
+				    <h3>The Mooring Mast</h3>
+				    <p>Describe it.</p>
 				</a>
     		</div>
   		</div>
@@ -85,9 +83,8 @@
   		<div class="column">
     		<div class="card">
     			<a href="{{url_for('essay07')}}">	
-				    <h3>Card 7</h3>
-				    <p>Some text</p>
-				    <p>Some text</p>
+				    <h3>Patience</h3>
+				    <p>Story writing.</p>
 				</a>
     		</div>
   		</div>
@@ -95,24 +92,22 @@
   		<div class="column">
     		<div class="card">
     			<a href="{{url_for('essay08')}}">	
-			    	<h3>Card 8</h3>
-			      	<p>Some text</p>
-			    	<p>Some text</p>
+			    	<h3>Laughter for a relationship</h3>
+			      	<p>Story Writing.</p>
+			    	
 			    </a>
     		</div>
   		</div>
 	</div>
 </div>
-<footer class="foot">
+<div class="foot">
 <a id="footerMailLink" href="mailto:saqeeb.360@gmail.com">saqeeb.360@gmail.com</a>
-<h1>1</h1>
-<h2>2</h2>
-<h1>1</h1>
-<h2>2</h2>
-<h1>1</h1>
-<h2>2</h2>
-<h1>1</h1>
-<h2>2</h2>
-</footer>
+<br>
+<br>
+<a href="{{url_for('contact_us')}}">
+<h3>contact us</h3>
+</a>
+</div>
+
 </body>
 </html>
