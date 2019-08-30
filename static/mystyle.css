@@ -94,9 +94,9 @@ word-spacing: 4px;
 }
 
 .c{
-	margin: 100px 0px 100px 0px;
+	margin: 7% 0px 7% 0px;
 	background-image: linear-gradient(to bottom, #46c2b9 , #5a5959);
-	padding: 8vw;
+	padding: 30px 8vw 10% 8vw;
 }
 
 a{
@@ -112,6 +112,7 @@ a:hover {
   text-decoration: underline;
 }
 .foot{
-	padding: 40px 100px;
+  align-items: center;
+	padding: 10% 30%;
 	background-image: linear-gradient(to bottom, #46c2b9 , #5a5959);
 }

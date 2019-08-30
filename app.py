@@ -110,13 +110,20 @@ def essay07():
 def essay08():      
     return render_template('essay08.html')
 
-@app.route('/result/',methods = ['GET','POST'])
+@app.route('/result',methods = ['GET','POST'])
 def result():
     essay_id = 1
     essay = str(request.form['essay'])
     score = pred_method(essay,essay_id)
     return render_template('result.html',score=score)
 
+@app.route('/contact_us')
+def contact_us():
+    return render_template('contact.html')
+
+@app.route('/how')
+def how():
+    return render_template("how.html")
 if __name__ == '__main__':
 	app.run()
 
