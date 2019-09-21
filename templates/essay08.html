@@ -7,21 +7,21 @@
 </head>
 <body>
 	<ul class="topnav">
-  		<li><a href="#home">HOME</a></li>
-  		<li><a class="active" href="{{url_for('essay02')}}">ESSAY</a></li>
+  		<li><a href="{{url_for('home')}}">HOME</a></li>
+  		<li><a class="active" href="{{url_for('essay08')}}">ESSAY</a></li>
   		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
   		<li><a href="{{url_for('contact_us')}}">CONTACT</a></li>
   		<li class="right"><a href="#about">ABOUT</a></li>
   	</ul>
-	<dir class='heading'>
+	<div class='heading'>
 		<center >
 			<h2>Laughter for a relationship.</h2>
 			<p>
 				We all understand the benefits of laughter. For example, someone once said, “Laughter is the shortest distance between two people.” Many other people believe that laughter is an important part of any relationship. Tell a true story in which laughter was one element or part.
 		</center>
-	</dir>
+	</div>
 	<div align="center">
-		<form method=POST action="{{ url_for('result')}}" class="form-group">
+		<form method=POST action="{{ url_for('result',var='11')}}" class="form-group">
 			<textarea name="essay" rows="20" cols="70" placeholder="Enter the essay."></textarea><br><br>
 			<button type="submit" class="button" style="vertical-align:middle"><span>
 				Result

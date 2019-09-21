@@ -7,13 +7,13 @@
 </head>
 <body>
 	<ul class="topnav">
-  		<li><a href="#home">HOME</a></li>
- 		<li><a class="active" href="{{url_for('essay02')}}">ESSAY</a></li>
+  		<li><a href="{{url_for('home')}}">HOME</a></li>
+ 		<li><a class="active" href="{{url_for('essay06')}}">ESSAY</a></li>
   		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
-  		<li><a href="#{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li><a href="{{url_for('contact_us')}}">CONTACT</a></li>
   		<li class="right"><a href="#about">ABOUT</a></li>
   	</ul>
-	<dir class='heading'>
+	<div class='heading'>
 		<center >
 			<h2>The Mooring Mast
 by Marcia Amidon Lüsted
@@ -23,9 +23,9 @@ by Marcia Amidon Lüsted
 
 			</p>
 		</center>
-	</dir>
+	</div>
 	<div align="center">
-		<form method=POST action="{{ url_for('result')}}" class="form-group">
+		<form method=POST action="{{ url_for('result',var='6')}}" class="form-group">
 			<textarea name="essay" rows="20" cols="70" placeholder="Enter the essay."></textarea><br><br>
 			<button type="submit" class="button" style="vertical-align:middle"><span>
 				Result.. >>
