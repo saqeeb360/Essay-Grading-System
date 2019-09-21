@@ -115,7 +115,25 @@ def result(var):
     essay_id = int(var)
     essay = str(request.form['essay'])
     score = pred_method(essay,essay_id)
-    return render_template('result.html',score=score)
+    if essay_id == 1:
+        max_score = 12
+    elif essay_id == 2:
+        max_score = 6
+    elif essay_id == 3:
+        max_score = 3
+    elif essay_id == 4:
+        max_score = 3
+    elif essay_id == 5:
+        max_score = 4
+    elif essay_id == 6:
+        max_score = 4
+    elif essay_id == 7:
+        max_score = 30
+    elif essay_id == 8:
+        max_score = 60
+    if score>max_score:
+        score = max_score    
+    return render_template('result.html',score=score,max_score=max_score)
 
 @app.route('/contact_us')
 def contact_us():
